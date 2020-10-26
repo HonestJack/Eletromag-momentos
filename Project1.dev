@@ -4,8 +4,8 @@ Name=Project1
 Type=1
 Ver=2
 ObjFiles=
-Includes=
-Libs=
+Includes=C:\Users\mucar\OneDrive\Documentos\Dev-C++\Eletromag\MetNum\lib
+Libs=C:\Users\mucar\OneDrive\Documentos\Dev-C++\Eletromag\MetNum\src
 PrivateResource=
 ResourceIncludes=
 MakeIncludes=
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=
+OverrideOutputName=Project1.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -29,6 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
+UnitCount=3
 
 [VersionInfo]
 Major=1
@@ -38,14 +39,44 @@ Build=0
 LanguageID=1033
 CharsetID=1252
 CompanyName=
-FileVersion=
+FileVersion=1.0.0.0
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=
+ProductVersion=1.0.0.0
 AutoIncBuildNr=0
 SyncProduct=1
+
+[Unit1]
+FileName=MetNum\main.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=MetNum\src\fita.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit3]
+FileName=MetNum\lib\fita.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
 
