@@ -1,5 +1,5 @@
 [Project]
-FileName=Project1.dev
+FileName=Eletromag.dev
 Name=Project1
 Type=1
 Ver=2
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=Project1.exe
+OverrideOutputName=Eletromag.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=

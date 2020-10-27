@@ -27,11 +27,7 @@ int main(){
 	
 	capacitor.pede_dados();
 	capacitor.monta_matriz_A();
-//	string str;
-//	str  = to_string(5);
-//	printf("\n\n%s\n\n", str);
-	
-	
+	capacitor.monta_matriz_L();
 
 	return 0;
 }

@@ -14,20 +14,20 @@
 
 class c_sup_infinitesimal{
 	public:
-		float pos_x;
-		float pos_y;
-		float pos_z;
+		double  pos_x;
+		double  pos_y;
+		double  pos_z;
 };
 
 class c_fita{
 	public:
 		c_sup_infinitesimal v_sup_infinitesimal[MAX_NUM_SUPS];
-		float largura, comprimento, area;
-		float del_x, del_y;
+		double  largura, comprimento, area;
+		double  del_x, del_y;
 		int div_largura, div_comprimento;
 		
-		void preenche_dim(float aux_larg, float aux_comp, int aux_div_larg, int aux_div_comp);
-		void preenche_pos( float shift_y, float shift_x);
+		void preenche_dim( double aux_larg, double aux_comp, int aux_div_larg, int aux_div_comp);
+		void preenche_pos(double shift_y, double shift_x, double shift_z);
 		void pede_dados();
 };
 
@@ -37,18 +37,20 @@ class c_capacitor
 		c_fita fita_1, fita_2;
 		c_sup_infinitesimal fitas_mescladas[2*MAX_NUM_SUPS];
 		
-		float A[2*MAX_NUM_SUPS][2*MAX_NUM_SUPS];
+		double  A[2*MAX_NUM_SUPS][2*MAX_NUM_SUPS];
+		double  L[2*MAX_NUM_SUPS][2*MAX_NUM_SUPS];
 		
-		float largura, comprimento, area;
-		float dist_x, dist_y, dist_z;
+		double  largura, comprimento, area;
+		double  dist_x, dist_y, dist_z;
 		int div_largura, div_comprimento;
 		
 		void mescla_fitas();
-		float distancia(int i, int j);
+		double  distancia(int i, int j);
 		
 	public:
 		void pede_dados();
 		void monta_matriz_A();
+		void monta_matriz_L();
 };
 
 #endif
