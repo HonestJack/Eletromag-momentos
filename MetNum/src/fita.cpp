@@ -163,7 +163,7 @@ void c_capacitor::monta_vetor_V()
 	for(i=0;i<num_div_em_uma_placa;i++)
 	{
 		V[i] = V_TESTE_1;
-		V[i+num_div_em_uma_placa] =V_TESTE_2;
+		V[i+num_div_em_uma_placa] = V_TESTE_2;
 	}
 }
 
@@ -216,7 +216,7 @@ void c_capacitor::calcula_carga()
 	for(i=0;i<num_div_em_uma_placa;i++)
 	{
 		carga_1 += p[i]*fita_1.area;
-		carga_2 += p[i]*fita_2.area;
+		carga_2 += p[i + num_div_em_uma_placa]*fita_2.area;
 	}
 	cout << "\n\nCarga da placa 1: " << carga_1;
 	cout << "\nCarga da placa 2: " << carga_2;
