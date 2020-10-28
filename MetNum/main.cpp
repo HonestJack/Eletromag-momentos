@@ -7,9 +7,6 @@
 #include "fita.h"
 
 
-#define V_TESTE_1 1
-#define V_TESTE_2 0
-
 /*
 	===================
 						 y
@@ -27,7 +24,12 @@ int main(){
 	
 	capacitor.pede_dados();
 	capacitor.monta_matriz_A();
+	capacitor.monta_vetor_V();
 	capacitor.monta_matriz_L();
+	capacitor.encontra_vetor_y();
+	capacitor.encontra_vetor_p();
+	capacitor.calcula_carga();
+	capacitor.calcula_capacitancia();
 
 	return 0;
 }
